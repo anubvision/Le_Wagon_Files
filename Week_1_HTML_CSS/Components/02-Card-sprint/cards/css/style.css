@@ -1,0 +1,34 @@
+/* Import fonts from Google Fonts */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700");
+
+/* Importing all components file */
+@import url("components/cards.css");
+
+/* General for fonts and colors */
+body {
+  margin: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+.text-top {
+  font-family: Raleway, Helvetica, sans-serif;
+  color: black;
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  font-size: 18px;
+  margin: 0px;
+}
+p {
+  font-size: 12px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+img {
+  height:150px;
+  width: 100%;
+  object-fit: cover;
+
+}

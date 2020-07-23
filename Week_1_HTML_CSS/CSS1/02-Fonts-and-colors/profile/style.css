@@ -1,0 +1,38 @@
+
+body {
+    background-color: #D9E1E2;
+    color: #000;
+    font-family: helvetica, serif, calibri;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+    display: block;
+    margin: 8px;
+}
+
+.img_logo {
+  width: 80px;
+}
+
+h1 {
+color: #F6B700;
+font-family: calibri;
+font-size: 24px;
+line-height: 35px;
+}
+h2 {
+color: #F6B700;
+font-family: calibri;
+font-size: 18px;
+line-height: 25px;
+}
+h3 {
+color: #F6B700;
+font-family: calibri;
+font-size: 18px;
+line-height: 25px;
+}
+a:hover {
+  color: #515151;
+
+}

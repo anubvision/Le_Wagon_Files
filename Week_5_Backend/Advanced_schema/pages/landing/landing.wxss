@@ -1,0 +1,47 @@
+/* pages/landing/landing.wxss */
+.h1 {
+  color: white;
+  font-weight: bold;
+  font-family: 'calibri';
+}
+.btn-flat {
+  background-color: white;
+  color: #2d0814;
+  font-family: sans-serif;
+  transition: all 1s linear;
+}
+.p {
+  color: white;
+}
+.avatar {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: flex-start;
+  color: black;
+  background-color: #d6d6d6;
+  min-height: 100rpx;
+  margin: 20rpx 0;
+  width: 95%;
+  font-size: 36rpx;
+  /* box-shadow: 5px 5px 0px 0.5px rgba(0,0,0,1); */
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.section__title {
+  font-weight: bold;
+}
+
+textarea {
+  padding: 10px 0px;
+}
+.container {
+  padding: 300px 0;
+}

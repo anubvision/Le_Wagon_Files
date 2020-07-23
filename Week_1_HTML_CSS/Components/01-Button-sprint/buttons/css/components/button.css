@@ -1,0 +1,41 @@
+/* Your button CSS file */
+
+.btn-white {
+    border: 0.5px solid #CECECE;
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: #CECECE;
+    font-weight: lighter;
+    transition: 0.3s;
+  }
+  .btn-white:hover {
+    color: grey;
+    border: 0.5px solid grey;
+  }
+
+.btn-green {
+    color: white;
+    padding: 10px 20px;
+    background-color: #40CC90;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.btn-green:hover {
+  background-color: #00A65E;
+}
+
+.btn-none {
+    border: 1px solid #00A65E;
+    padding: 10px 30px;
+    color: white;
+    box-shadow: 5px 5px 0 #00A65E;
+    background-color: #40CC90;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btn-none:hover {
+    box-shadow: 10px 10px 0 #00A65E;
+    color: #00A65E;
+}
+

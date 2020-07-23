@@ -1,0 +1,71 @@
+/* --- Font imports --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
+
+/* --- Component imports --- */
+@import url("components/container.css");
+@import url("components/button.css");
+
+
+/* --- Fonts & colors --- */
+body {
+  background-color: rgb(245,245,245);
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  margin: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    column-count: 3;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    column-count: 2;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .container {
+    column-count: 1;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+.img-logo {
+    width: 50px;
+    object-fit: contain;
+    margin: 5px 20px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: 'calibri';
+}
+
+p {
+  font-family: 'calibri';
+  font-size: 18px;
+
+}
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.avatar-name {
+    padding: 0px 0px 0px 10px;
+    font-weight: bold;
+
+}
+.like-qty {
+    padding: 0px 0px 0px 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: pink;
+}

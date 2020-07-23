@@ -1,0 +1,12 @@
+/* pages/landing/landing.wxss */
+.h1 {
+  color: white;
+  font-weight: bold;
+  font-family: 'calibri';
+}
+.btn-flat {
+  background-color: white;
+  color: #2d0814;
+  font-family: sans-serif;
+  transition: all 1s linear;
+}

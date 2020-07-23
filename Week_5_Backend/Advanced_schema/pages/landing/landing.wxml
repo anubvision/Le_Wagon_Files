@@ -1,0 +1,23 @@
+  <!--pages/landing/landing.wxml-->
+  <page>
+    <view class="banner" style="padding-top:20px; height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/pages/images/landing-img.jpg);">
+      <view class="h1">{{title}}</view>
+      <view class="container">
+        <form bindsubmit="onRegister">
+          <view class="section">
+            <view class="section__title">ID</view>
+            <input name="username" placeholder="Please write your name here" />
+          </view>
+        
+          <view class="section">
+            <view class="section__title">Password</view>
+            <input name="password" type="password" placeholder="Enter Your Password"></input>
+          </view>
+        
+          <view class="btn-area">
+            <button formType="submit">Submit</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </page>

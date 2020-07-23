@@ -1,0 +1,16 @@
+<!--pages/post/post.wxml-->
+<form bindsubmit="formSubmit">
+  <view class="section">
+    <view class="section__title">Name</view>
+    <input name="name" placeholder="Please write your name here" />
+  </view>
+
+  <view class="section">
+    <view class="section__title">Your story</view>
+    <textarea name="content" placeholder="Please write your post here" ></textarea>
+  </view>
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+  </view>
+</form>

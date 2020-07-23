@@ -1,0 +1,40 @@
+.fa-heart {
+ color: grey;
+ font-size: 24px;
+ transition: 0.3s;
+}
+
+.fa-heart:hover{
+  color: pink;
+}
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 150px;
+  padding: 15px 30px;
+  margin: 10px 5px 5px 5px;
+  position: inherit;
+}
+.topnav a:hover {
+  border: 2px solid #DDD;
+  color: black;
+  border-radius: 150px;
+  box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 8px;
+  border: 1px solid #ddd;
+  margin-right: 16px;
+  font-size: 17px;
+  width: 385px;
+}
+

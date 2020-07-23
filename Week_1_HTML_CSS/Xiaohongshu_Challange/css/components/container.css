@@ -1,0 +1,63 @@
+.header {
+    background: white;
+    font-size: 14px;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+    align-items: center;
+}
+.header-logo-home {
+  display: flex;
+}
+.container {
+    padding: 0 160px;
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    column-count: 3;
+}
+.content {
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 250px;
+    overflow: hidden;
+    background: white;
+    background-color: #eee;
+    margin: 1em 1em 1em;
+    width: 100%;
+    background-color: #eee;
+    display: inline-block;
+    margin: 1em 0 1em;
+    width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-items: center;
+
+}
+.profile-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 0px 15px 15px 15px;
+  align-items: center;
+}
+.avatar-box {
+  display: flex;
+  align-items: center;
+}
+.like-box {
+  display: flex;
+  align-items: center;
+}

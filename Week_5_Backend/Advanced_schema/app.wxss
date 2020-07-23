@@ -1,0 +1,83 @@
+/**app.wxss**/
+/* .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+/**app.wxss**/
+
+.container {
+  padding: 100rpx 0;
+  width: 100%;
+  margin: 0 auto;
+} 
+
+.h1 {
+  font-size:40px;
+  font-family: Arial;
+  color: white;
+}
+.h3 {
+  font-size:22px;
+  font-weight: bold;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 400px;
+  padding: 25px;
+}
+
+.banner .h1 .text {
+  margin: 0;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.banner .p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.btn-flat {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: #ffdd33;
+  transition: background 0.3s ease;
+  color: grey;
+}
+.btn-flat:hover {
+  background-color: royalblue;
+  color: white;
+}
+.card-product {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  padding: 10px;
+}
+.card-product-infos {
+  width: 100%;
+}
+.button-hover {
+  background-color: grey;
+}
+.image {
+  width: 100%;
+  display: block;
+}
+.h1 {
+  text-align: center;
+}

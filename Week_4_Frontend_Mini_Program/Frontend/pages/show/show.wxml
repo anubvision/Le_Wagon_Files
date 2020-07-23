@@ -1,0 +1,40 @@
+<view>
+  <!-- STORY -->
+  <view class="card-product">
+    <view class="card-product-infos">
+      <image style="background-color: #eeeeee; display: block; width: 100% " mode="{{item.mode}}" src="{{story.img}}"></image>
+
+      <view class="h2">{{stories.content}}</view>
+      <view class="p" style="padding: 0">Source: {{story.name}}</view>
+    </view>
+  </view>
+  <!-- Comment -->
+  <view class="comment-container" style="">
+          <!-- Comment submit -->
+      <view class="card-product">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+          <view class="section">
+            <input name="content" placeholder="Comment please"/>
+          </view>
+        </form>
+        <view class="button" style="padding: 0; ">
+          <button formType="submit">Post</button>
+        </view>      
+      </view>
+        <!-- API Comment -->
+      <view wx:for="{{comment}}" wx:key="stories" wx:for-item="comment" class="card-product">
+        <view class="card-product-infos">
+          <view class="p">{{comment.text}}</view>
+          <!-- <view class="p">{{comment.text}}</view> -->
+        <!-- Comment Vote -->
+          <view class="" style="display: flex; justify-content: space-between; padding-right: 15px">
+            <view class="p" data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtab="voteComment">Votes:{{comment.votes}}</view>
+           <!-- deVote -->
+            <view class="p" data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="deVoteComment" >Devote !</view>
+            <!-- Delete Comment -->
+            <view data-id="{{comment.id}}" bindtap="deleteComment">Delete</view>
+        </view>
+        </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/show/show.wxss */
+.container {
+  align-items: center;
+}
+.h3 {
+  padding: 0 15px;
+}
+.p {
+  padding: 0 15px;
+}
+.card-product {
+display: flex;
+justify-content: space-between;
+margin: 0 5px;
+}

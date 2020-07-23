@@ -1,0 +1,22 @@
+/* pages/stories/stories.wxss */
+
+.page {
+  background-color: white;
+}
+
+.p .h3 {
+  color: black;
+  font-family: sans-serif;
+}
+.p {
+  font-weight: bold;
+}
+.content-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-area {
+    width: 100px;
+}
+

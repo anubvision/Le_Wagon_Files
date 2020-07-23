@@ -1,0 +1,58 @@
+/* Your card CSS file */
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.card-category {
+  display: flex;
+  height: 180px;
+  background-size: cover;
+  color: white;
+  background-position: center;
+  justify-content: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-size: 20px;
+  margin: 15px 0px;
+  align-items: center;
+}
+.card-product {
+    height: 180px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin: 15px 0px;
+    align-items: left;
+}
+.product-name {
+    align-self: center;
+    padding: 25px;
+}
+.skate-img {
+    height: 100%;
+    width: 180px;
+    background-size: cover;
+}
+.card-trip {
+  background-color: pink;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 300px;
+}
+.travel-img {
+  height: 200px;
+  background-size: 100%;
+  width: 100%;
+}
+.trip-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  background-size: cover;
+}
