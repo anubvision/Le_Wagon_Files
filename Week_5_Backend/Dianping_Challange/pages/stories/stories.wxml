@@ -1,0 +1,19 @@
+<!--pages/stories/stories.wxml-->
+<block wx:for="{{restaurants}}" wx:key="" wx:for-item="restaurants">
+  <view class="card-product">
+    <view class="card-product-infos" style="width: 100%">
+      <view data-id="{{restaurants.id}}" bindtap="showStory">
+        <image style="background-color: #eeeeee; display: block; width: 100% " mode="{{restaurants.mode}}" src="{{restaurants.image}}"></image>
+        <view style="padding: 5px 15px">
+          <view class="h2">{{restaurants.name}}</view>
+        </view>
+        <view class="content-info" style="padding: 0 15px">
+          <view class="p">{{restaurants.details}}</view>
+          <view class="p">{{restaurants.address}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+

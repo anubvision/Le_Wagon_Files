@@ -1,0 +1,15 @@
+/* pages/stories/stories.wxss */
+
+.page {
+  background-color: white;
+}
+
+.content-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-area {
+    width: 100px;
+}
+

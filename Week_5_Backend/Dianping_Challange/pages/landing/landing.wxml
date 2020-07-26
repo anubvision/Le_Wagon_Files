@@ -1,0 +1,13 @@
+  <!--pages/landing/landing.wxml-->
+  <page>
+    <view class="banner" style="padding-top:20px; height: 100vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/pages/images/landing-img.jpg);">
+      <view class="h1">{{title}}</view>
+      <view class="container">
+        <form bindsubmit="onRegister">
+          <view class="btn-area">
+            <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信 Login</button>
+          </view>
+        </form>
+      </view>
+    </view>
+  </page>
