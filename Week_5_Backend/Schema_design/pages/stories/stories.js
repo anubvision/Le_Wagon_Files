@@ -8,28 +8,28 @@ Page({
       '/pages/images/IMG_1370.jpg','/pages/images/image-4.jpg','/pages/images/image-3.jpg', '/pages/images/image-5.jpg', '/pages/images/image-6.jpg'
     ],
     stories: [] 
- },
-showStory(event) {
-    let data = event.currentTarget.dataset;
-    let id = data.id;
+  },
+  showStory(event) {
+      let data = event.currentTarget.dataset;
+      let id = data.id;
+      wx.navigateTo({
+        url: `/pages/show/show?id=${id}`
+      });
+  },
+  toStory: function(event) {
+    console.log('res', event);
+    const id = event.currentTarget.dataset.id;
     wx.navigateTo({
-      url: `/pages/show/show?id=${id}`
-    });
-},
-toStory: function(event) {
-  console.log('res', event);
-  const id = event.currentTarget.dataset.id;
-  wx.navigateTo({
-    url: 'detail?id' + id,
-  })
-  this.dataset({
-  })
-},
-goToPost: function() {
-  wx.reLaunch({
-    url: '/pages/show/show'
-  })
-},
+      url: 'detail?id' + id,
+    })
+    this.dataset({
+    })
+  },
+  goToPost: function() {
+    wx.reLaunch({
+      url: '/pages/show/show'
+    })
+  },
 
 // this is a function to handle data
   setStories: function (data) {
@@ -58,7 +58,6 @@ goToPost: function() {
     let stories = 'story'
     let story = new wx.BaaS.TableObject('stories');
     //stories() - is the promise .then() => moves to console.log
-    
     story.find().then((res) => {
       console.log('res',res)
       this.setData ({

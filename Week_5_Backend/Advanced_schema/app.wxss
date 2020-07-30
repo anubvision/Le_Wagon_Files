@@ -1,15 +1,4 @@
 /**app.wxss**/
-/* .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-}  */
-/**app.wxss**/
-
 .container {
   padding: 100rpx 0;
   width: 100%;
@@ -21,10 +10,14 @@
   font-family: Arial;
   color: white;
 }
-.h3 {
-  font-size:22px;
+.h2 {
   font-weight: bold;
 }
+.p {
+  color: black;
+  font-family: sans-serif;
+}
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -62,12 +55,13 @@
 }
 .card-product {
   background-color: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
   overflow: hidden;
   height: 100%;
   display: flex;
   padding: 10px;
 }
+
 .card-product-infos {
   width: 100%;
 }

@@ -1,0 +1,23 @@
+<!--pages/post/post.wxml-->
+<!--pages/post/post.wxml-->
+<image class="bannerImage" src="http://image.shanghaiwow.com:1234/uploads/blogs/000/009/106/editor/15223932835290.jpg"></image>
+<view class="card-product">
+  <image class="userImage"  src="{{currentUser.avatar}}"></image>
+  <view>
+    <view class="h2">User: {{currentUser.nickname}}</view>
+    <view class="p">ID: {{currentUser.id}}</view>
+    <navigator url="/pages/post/points/points">
+      <view class="p">Points: {{currentUser.points}}</view>
+    </navigator>
+  </view>
+</view>
+<view class="card-product">
+  <view class="card" style="padding: 15px">
+  <view wx:for="{{order}}" wx:for-item="order">
+  <view class="h2">Order History</view>
+  <view class="p">My order: {{order.meal_id}}</view>
+  <view class="p">Dish: {{order.name}}</view>
+  <view class="p">Quantity: {{order.quantity}}</view>
+  </view>
+  </view>
+</view>

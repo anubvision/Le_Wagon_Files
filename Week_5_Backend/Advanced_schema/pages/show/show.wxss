@@ -2,14 +2,21 @@
 .container {
   align-items: center;
 }
-.h3 {
-  padding: 0 15px;
+.card {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+  display: row;
 }
-.p {
-  padding: 0 15px;
+.section {
+  background-color: white;
+  margin: 20px 0px;
+  padding: 5px;
+  border-radius:4px;
 }
-.card-product {
-display: flex;
-justify-content: space-between;
-margin: 0 5px;
+.mini-btn{
+  margin: 10rpx 0px 0px 100rpx;
+  padding: 5rpx 10rpx;
 }

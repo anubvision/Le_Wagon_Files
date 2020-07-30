@@ -5,7 +5,7 @@ Page({
   /*** Page initial data*/
   data: {
     images:['/pages/images/image-3.jpg'],
-    stories: {},
+    stories: [],
     comment: []
   },
   formSubmit: function (event) {
@@ -31,76 +31,33 @@ Page({
       wx.request(request);
   },
 
-  setStories: function (data) {
-    let page = this;
-  },
 
-  getRequestData: function (res) {
-    let page = this;
-    let tempStories = res.data.objects;
-    let stories = tempStories.map((s, idx) => {
-      s.images = page.data.images[idx]
-      return s;
-    });
-    this.setData ({
-      stories: res.data.objects,
-    });
-  },
 
-  getCommentData: function (res) {
-    console.log(res);
-    this.setData ({
-      comments: res.data.objects,
-    })
-  },
 
   onLoad: function (options) {
     let page = this;
     let tableName= 'stories';
     let story = new wx.BaaS.TableObject('stories');
     let recordID = options.id;
-
     story.get(recordID).then((res)=>{
       console.log(res);
       this.setData({
         stories: res.data
       })
     });
+
+   
     let id = options.id;
     let comments = new wx.BaaS.TableObject('comment');
     let query = new wx.BaaS.Query();
     query.compare('stories_id', '=', id);
 
     comments.setQuery(query).find().then((res)=> {
-      console.log(res);
+      console.log('comment', res);
       this.setData({
         comment: res.data.objects,
       })
     });
-
-
-    // let page = this;
-    // let id = options.id
-    // let request = {
-    //    url: `https://cloud.minapp.com/oserve/v1/table/84988/record/${id}`,
-    //    header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'},
-    //    method: 'GET', // If no method, default is GET
-    //    success: page.getRequestData
-    // };
-    // wx.request(request);
-
-    // let commentRequest = {
-    //   url: `https://cloud.minapp.com/oserve/v1/table/85188/record/${id}`,
-    //   header: {'Authorization':'Bearer 7a82a2b76c38e309ae34ff3c83c87f8409748b0e'},
-    //   method: 'GET', // If no method, default is GET
-    //   data: {
-    //     where: { //filtering comment in specific story
-    //       "story_id": { "$eq": id } // story id
-    //     }
-    //   },
-    //   success: page.getCommentData
-    // }
-    // wx.request(commentRequest);
   },
 
   voteComment(event) {

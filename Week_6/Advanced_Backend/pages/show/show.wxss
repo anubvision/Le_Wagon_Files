@@ -1,0 +1,27 @@
+/* pages/show/show.wxss */
+.container {
+  align-items: center;
+}
+.card {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+  height: 100%;
+  padding: 10px;
+  display: row;
+}
+.section {
+  background-color: white;
+  margin: 20px 0px;
+  padding: 5px;
+  border-radius:4px;
+}
+.mini-btn{
+  margin: 10rpx 0px 0px 100rpx;
+  padding: 5rpx 10rpx;
+}
+.meal-content {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}

@@ -1,35 +1,33 @@
 <view>
   <!-- STORY -->
   <view class="card-product">
-    <view class="card-product-infos">
-      <image style="background-color: #eeeeee; display: block; width: 100% " mode="{{item.mode}}" src="{{story.img}}"></image>
-
-      <view class="h2">{{stories.Content}}</view>
+    <view class="card-product-infos" style="width: 100%">
+      <image style="background-color: #eeeeee; display: block; width: 100% " mode="{{restaurants.mode}}" src="{{restaurants.image}}"></image>
+      <view class="content-info" style="padding: 0 5px">
+        <view class="h2" style="color: black">{{restaurants.name}}</view>
+        <view style="display: flex; justify-content: space-between">
+          <view class="p">{{restaurants.details}}</view>
+          <view class="p">{{restaurants.address}}</view>
+        </view>
+      </view>
     </view>
   </view>
-  <!-- Comment -->
-  <view class="comment-container" style="">
-          <!-- Comment submit -->
-      <view class="card-product">
-        <form bindsubmit="formSubmit" bindreset="formReset">
-          <view class="section">
-            <input name="content" placeholder="Comment please"/>
-          </view>
-        </form>
-        <view class="button" style="padding: 0; ">
-          <button formType="submit">Post</button>
-        </view>      
-      </view>
-        <!-- API Comment -->
-      <view wx:for="{{comment}}" wx:key="stories" wx:for-item="comment" class="card-product">
-        <view class="card-product-infos">
-          <view class="p">{{comment.text}}</view>
-          <view class="p" style="font-weight: bold">{{comment.Name}}</view>
-        </view>
-        <view> {{comment.content}}
-          <!-- other comment fields -->
-          <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" > votes: {{comment.votes}} </view>
-        </view>
-      </view>
+
+  <view wx:for="{{review}}" wx:for-item="review">
+    <!--reviews-->
+    <view class="card">
+      <view class="p" style="font-weight: bold">{{review.content}}</view>
+      <view class="p">Rating: {{review.rating}} stars</view>
+    </view>
   </view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset" wx:if="{{currentUser}}">
+    <view class="card">
+      <input name="content" placeholder="Comment please"/>
+        <picker mode="selector" range="{{ratings}}" onchange="onRate">Rating: {{rating}}</picker>
+        <button formType="submit" class="mini-btn">Post</button> 
+        <button formType="reset" class="mini-btn">Reset</button> 
+    </view>    
+  </form>  
+
 </view>
